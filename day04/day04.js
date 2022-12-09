@@ -18,17 +18,22 @@ for (let i = 0; i < data.length; i++) {
     const newArr = arr.join('').split(',');
 
     for (let i = 0; i < newArr.length - 1; i++) {
+        //first value in first range
         const firstFirst = Number(
             newArr[i].slice(0, Math.floor(newArr[i].length / 2))
         );
 
+        //second value in first range
         const firstSecond = Number(
             newArr[i].slice(Math.floor(newArr[i].length / 2))
         );
 
+        //first value in secong range
         const secondFirst = Number(
             newArr[i + 1].slice(0, Math.floor(newArr[i + 1].length / 2))
         );
+
+        //second value in second range
         const secondSecond = Number(
             newArr[i + 1].slice(Math.floor(newArr[i + 1].length / 2))
         );
